@@ -6,6 +6,13 @@
       p { font-weight: bold; }
     </style>
     <title>HTML</title>
+    <script>
+  function clickHandler() {
+    const box = document.getElementById("box");
+    const p = document.createElement("p");
+    p.innerText = "Added by JS";
+  }
+</script>
   </head>
   <body>
     <h1>Hello HTML</h1>
@@ -15,5 +22,8 @@
 HTML
 </a>.
     </p>
+    <button onclick="clickHandler()">JS</button>
+  <div id="box"></div>
+</body>
   </body>
 </html>
